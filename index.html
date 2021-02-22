@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Web Homework</title>
+</head>
+
+<body >
+  <nav class="navbar navbar-expand-lg navbar-light bg-light my-navbar-padding">
+    <div class="container-fluid">
+      <a class="navbar-brand my-nav-brand" href="index.html">Latitude</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+       <div class="nav navbar-nav navbar-right">
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="nav justify-content-end">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Plots</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="Max_Temp.html">Max Temperature</a></li>
+                <li><a class="dropdown-item" href="Humidity.html">Humidity</a></li>
+                <li><a class="dropdown-item" href="Cloudiness.html">Cloudiness</a></li>
+                <li><a class="dropdown-item" href="Wind_Speed.html">Wind Speed</a></li>
+              </ul>
+            </li>         
+            <li class="nav-item">
+              <a class="nav-link" href="Comparision.html">Comparison</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Data.html">Data</a>
+            </li>
+          </ul>
+        </div>
+       </div>
+    </div>
+  </nav>
+
+<br>
+<br>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-9">
+        <div class="col-sm-11 main-box">
+         <h2 class="my-h2">Summary: Latitude vs. X</h2>
+         <hr>
+         <img src="images/Max_Temp.png" height=200px alt="Temps at the Equator" class="float-start">
+         <p>The purpose of this project was to analize how weather changes as you get closer to the equator. Toaccomplish this analysis, we first pulled data from the OpenWeatherMap API to aassemble a dataset on over 500 cities.</p>
+         <p>After assembling the dataset, we used Matplolib to plot various aspects of the weather vs. latitud. Factors we looked at included: temperature, cloudiness, wind speed, and humidity.This site provides the source data and visualization created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed</p>
+        </div>
+      <div class="col-sm-1"></div>
+      </div>
+      <div class="col-sm-3">
+        <div class="col-sm-12 image-fluid">
+          <h2 class="my-h2">Visualizations</h2>
+          <hr>
+          <div class="row">
+            <div class="col-sm-6">
+              <a href="Max_Temp.html"><img class="img-fluid" src="images/max_temp.png" alt="Max Temp"></a>
+            </div>
+            <div class="col-sm-6">
+              <a href="Humidity.html"><img class="img-fluid" src="images/humidity.png" alt="Humidity"></a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <a href="Cloudiness.html"><img class="img-fluid" src="images/cloudiness.png" alt="Cloudiness"></a>
+            </div>
+            <div class="col-sm-6">
+              <a href="Wind_Speed.html"><img class="img-fluid" src="images/wind_speed.png" alt="Wind Speed"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+  </body>
+</html>
